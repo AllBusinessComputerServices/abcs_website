@@ -1,0 +1,267 @@
+/* begin Page */
+
+/* Created by Artisteer v3.1.0.46558 */
+
+#page-background-glare{
+   display: none;
+}
+.cleared {
+   width:1px;
+}
+/* Start Box */
+.box, .box-body {
+   zoom:1;
+}
+/* End Box */
+/* Start Bar */
+.bar{
+   zoom:1;
+}
+/* End Bar */
+/* end Page */
+
+/* begin Header */
+.header {
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('div'),firstChild).className='header-png',insertBefore(document.createElement('div'),firstChild).className='header-jpeg');
+   z-index: 1;
+}
+
+.header-png
+{
+   position: absolute;
+   z-index:-2;
+   top: 0;
+   width:100%;
+   height: 203px;
+   background-image: url('images/header.png');
+   background-repeat: no-repeat;
+   background-position:top center;
+}
+
+.header-jpeg
+{
+   position: absolute;
+   z-index:-1;
+   top: 0;
+   width:expression(parentNode.clientWidth - 2 * 26 + 'px');
+   left:26px;
+   height: 203px;
+   background-image: url('images/header.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+/* end Header */
+
+/* begin Menu */
+ul.hmenu, ul.hmenu ul, ul.hmenu li, ul.hmenu a {
+   zoom:1;
+}
+.hmenu li.hmenuhover{
+   z-index: 10000;
+}
+.hmenu .hmenuhoverUL{
+   visibility: visible;
+   top: 100%;
+   left: 0;
+}
+.hmenu .hmenuhoverUL .hmenuhoverUL{
+   top: 0;
+   left: 100%;
+}
+.hmenu ul li {
+   float: left !important;
+   clear: both;
+   width: 100%;
+}
+.nav
+{
+   zoom: 1;
+   height: 37px;
+   background:#323A31;
+}
+
+/* end Menu */
+
+/* begin MenuItem */
+.hmenu a 
+{
+   display:inline-block;
+   color: #DCD8CB;
+   padding: 0 17px;
+   line-height: 26px;
+   text-align: center;
+}
+
+.hmenu a.active 
+{
+   color: #FEE6BE;
+   background-color:#C37D04;
+}
+
+.hmenu a:hover, .hmenuhoverA,  .hmenuhover a 
+{
+   color: #221F16;
+   background-color:#FAA005;
+}
+
+/* end MenuItem */
+
+/* begin MenuSeparator */
+ul.hmenu li {
+   margin-left:expression(this.previousSibling==null?'0':'7px');
+}
+ul.hmenu li li{
+   margin-left:0;
+}
+
+span.hmenu-separator
+{
+   position:absolute;
+   display: block;
+   top:0;
+   left:  -7px;
+   width: 7px;
+   height: 26px;
+   background: url('images/menuseparator.png') center center no-repeat;
+}
+/* end MenuSeparator */
+
+/* begin MenuSubItem */
+.hmenu ul a 
+{
+   color: #DCD8CB !important;
+   float: left;
+}
+
+.hmenu ul a:hover, .hmenu ul .hmenuhover .hmenuhoverA 
+{
+   color: #000000 !important;
+   background-position: left bottom;
+   border-color: #A39775;
+   border-top-width: 1px !important;
+}
+
+/* end MenuSubItem */
+
+/* begin Box, Sheet */
+.sheet {
+   background:#211E17;
+}
+/* end Box, Sheet */
+
+/* begin Layout */
+.content-layout, .content-layout-row, .layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+/* end Layout */
+
+/* begin Button */
+.button-wrapper{
+   zoom: 1;
+}
+.button-wrapper .button-l, .button-wrapper .button-r {
+   display: none;
+}
+.button-wrapper .button {
+   float: left;
+}
+/* end Button */
+
+/* begin Box, Block */
+.block {
+   background:#211E17;
+}
+/* end Box, Block */
+
+/* begin BlockHeader */
+.blockheader {
+   background:#211E17;
+}
+/* end BlockHeader */
+
+/* begin Box, BlockContent */
+.blockcontent {
+   background:#211E17;
+}
+.blockcontent-body ul li{
+   height: 1%;
+}
+
+/* end Box, BlockContent */
+
+/* begin Box, Post */
+.post {
+   background:#211E17;
+}
+/* end Box, Post */
+
+/* begin PostIcons, PostHeaderIcons */
+.postheadericons span{
+   zoom: 1;
+}
+/* end PostIcons, PostHeaderIcons */
+
+/* begin PostBullets */
+.post ul li, .post ol ul li
+{
+   height: 1%;
+   padding-left: 13px;
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+.post ul ol li
+{
+   background: none;
+   padding-left: 0;
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+/* end PostBullets */
+
+/* begin PostMetadata, PostMetadataFooter */
+.postmetadatafooter
+{
+   zoom:1;
+   background:#332E22;
+}
+/* end PostMetadata, PostMetadataFooter */
+
+/* begin PostIcons, PostFooterIcons */
+.postfootericons span{
+   zoom: 1;
+}
+/* end PostIcons, PostFooterIcons */
+
+/* begin Footer */
+.footer-body{
+   padding-right: 0;
+   zoom:1;
+}
+.footer{
+   zoom:1;
+   background:#46402F;
+}
+
+.footer-text
+{
+   height: 20px;
+}
+
+/* end Footer */
+
+/* begin LayoutCell, content */
+.sidebar1 {
+   width: auto;
+}
+/* end LayoutCell, content */
+
