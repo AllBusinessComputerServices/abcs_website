@@ -6,7 +6,7 @@
     Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
     -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>ABCS - News about HealthNow</title>
+    <title></title>
     <meta name="description" content="All Business Computer Services" />
     <meta name="keywords" content="All Business Computer Services, consultant, healthcare, ICD-10, Obamacare, ACA, PPACA, Facets, HIPAA, CMS, CWS, Web Portal" />
 
@@ -83,7 +83,7 @@
 
                 </li>
 				<li>
-                    <a href="../news/lumeris.html">Lumeris</a>
+                    <a href="../news/lumeris.html" class="active">Lumeris</a>
 
                 </li>
 				<li>
@@ -111,7 +111,7 @@
 
                 </li>
 				<li>
-                    <a href="../news/healthnow-of-new-york.html" class="active">HealthNow of New York</a>
+                    <a href="../news/healthnow-of-new-york.html">HealthNow of New York</a>
 
                 </li>
 				<li>
@@ -192,17 +192,56 @@
     <div class="box-body post-body">
 <div class="post-inner article">
                                 <div class="postcontent">
-<p><span style="color: rgb(194, 186, 163); font-family: 'Palatino Linotype', Georgia, 'Times New Roman', Times, serif; letter-spacing: 2px; font-size: 20px; font-weight: bold; line-height: 20px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">HealthNow of New York Upgrades to Facets 4.71</span></p>
+<p><span style="color: rgb(194, 186, 163); font-family: 'Palatino Linotype', Georgia, 'Times New Roman', Times, serif; letter-spacing: 2px; font-size: 24px; font-weight: bold; line-height: 24px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">Lumeris/Essence Group Healthcare</span></p>
 
 <p><br /></p>
 
-<p>The client, Blue Cross Blue Shield of Western New York and Blue Cross Blue Shield of Northeastern New York dba HealthNow of New York wanted to upgrade its TriZetto’s Facets 4.41 application to the 4.71 version and upgrade its ITS Blues Association application to 11.2 on the same weekend. They also wanted to perform this upgrade in a more structured and controlled testing environment that followed a very strict SDLC model and they wanted to do it using many of the newest testing methods and tools. In order to accomplish all this, additional development and test environments needed to be constructed, support systems, development tools, testing tools, and a variety of additional applications needed to be installed to support the initiative. The multiple development environments along with the multiple test environments established for this upgrade allowed the execution of multiple parallel development efforts, as well as QA Testing, User Acceptance Testing, and Performance Testing.<br /></p>
+<p>Lumeris, the software development arm of Essence Group Healthcare, needed to provide additional Electronic Healthcare Record (EHR) transaction processing (specifically 270/271 and 276/277) for multiple trading partners and two separate Blue Cross Blue Shield organizations through the Blue Exchange. Three separate C# applications were developed, each of which used a common function library. The three applications were:</p>
+
+<ol>
+    <li>a Windows Service application,</li>
+
+    <li>a Web Service application, and</li>
+
+    <li>a Test Suite testing tool.</li>
+</ol>
+
+<p>The Windows service ran on a Facets Application Server and read the inbound queue of the IBM WebSphere MQ Server, performed some pre-processing edits, sent the transaction to the HIPAA Gateway Web Service, performed some post-processing edits on the response, and placed the edited response on the outbound queue.</p><br />
+
+<p>The web service application provided access for trading partners so that they could submit those same transaction types directly.</p><br />
+
+<p>The Test Suite testing tool allowed the QA tester to load and send specific transactions through the MQ Server, through the external Web Service, or through an internal direct connection and capture the resulting response transaction for compliance analysis. It also provided the ability to identify multiple transaction files to run through the system in mass, thus allowing easy regression and performance testing. </p>
 
 <p><br /></p>
 
-<p><a href="http://www.healthnowny.com/" target="_blank">HealthNow</a></p><br />
+<p>My Responsibilities, as Senior Developer, included:</p>
 
-<p></p>
+<ul>
+    <li>Developing a written requirements document detailing the design and functions of each of three applications.</li>
+
+    <li>Developing the pre and post-edits used to manipulate the content of the 270, 271, 276, 277, 997, and 999 X12 transactions being processed.</li>
+
+    <li>Designing and developing the Test Suite Testing Tool. This included:
+
+        <ul>
+            <li>A selectable configuration that allowed the tool to point to one of 4 environments</li>
+
+            <li>An override section that allowed individual overrides of any environment variable</li>
+
+            <li>A single transaction processor that allowed the submission of a request transaction through one of three delivery mechanisms</li>
+
+            <li>A multi-transaction processor that allowed the tester to load multiple transactions at one time and have them submitted for processing at a predetermined time interval.</li>
+        </ul>
+    </li>
+
+    <li>Developing a reporting tool that would extract pertinent data from the transaction logs and provide both detailed and summary reports for MQ and Web Service transaction activity.</li>
+</ul>
+
+<p><br /></p>
+
+<p><a href="http://lumeris.com" target="_blank" title="Lumeris">Lumeris/Essence Group Healthcare</a></p>
+
+<p><br /></p>
                 </div>
                 <div class="cleared"></div>
                 </div>

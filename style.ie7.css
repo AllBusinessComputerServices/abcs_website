@@ -1,7 +1,4 @@
 /* begin Page */
-#page-background-glare {
-   zoom: 1;
-}
 
 /* Start Box */
 .box {
@@ -242,6 +239,12 @@ ul.hmenu>li>span.hmenu-separator
 }
 /* end Layout */
 
+/* begin PostMetadata, PostMetadataHeader */
+.postmetadataheader{
+   zoom:1;
+}
+/* end PostMetadata, PostMetadataHeader */
+
 /* begin PostIcons, PostHeaderIcons */
 .postheadericons span{
    zoom: 1;
@@ -252,12 +255,6 @@ ul.hmenu>li>span.hmenu-separator
    height: 1%;
 }
 /* end PostContent */
-
-/* begin PostMetadata, PostMetadataFooter */
-.postmetadatafooter{
-   zoom:1;
-}
-/* end PostMetadata, PostMetadataFooter */
 
 /* begin PostIcons, PostFooterIcons */
 .postfootericons span{

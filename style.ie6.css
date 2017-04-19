@@ -1,10 +1,7 @@
 /* begin Page */
 
-/* Created by Artisteer v3.1.0.46558 */
+/* Created by Artisteer v3.1.0.48375 */
 
-#page-background-glare{
-   display: none;
-}
 .cleared {
    width:1px;
 }
@@ -203,6 +200,14 @@ span.hmenu-separator
 }
 /* end Box, Post */
 
+/* begin PostMetadata, PostMetadataHeader */
+.postmetadataheader
+{
+   zoom:1;
+   background:#2C281E;
+}
+/* end PostMetadata, PostMetadataHeader */
+
 /* begin PostIcons, PostHeaderIcons */
 .postheadericons span{
    zoom: 1;
@@ -213,7 +218,7 @@ span.hmenu-separator
 .post ul li, .post ol ul li
 {
    height: 1%;
-   padding-left: 13px;
+   padding-left: 17px;
    /* makes "ul li" not to align behind the image if they are in the same line */
   overflow-x: visible;
    overflow-y: hidden;
@@ -227,14 +232,6 @@ span.hmenu-separator
   overflow: visible;
 }
 /* end PostBullets */
-
-/* begin PostMetadata, PostMetadataFooter */
-.postmetadatafooter
-{
-   zoom:1;
-   background:#332E22;
-}
-/* end PostMetadata, PostMetadataFooter */
 
 /* begin PostIcons, PostFooterIcons */
 .postfootericons span{

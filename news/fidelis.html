@@ -6,7 +6,7 @@
     Base template (without user's data) checked by http://validator.w3.org : "This page is valid XHTML 1.0 Transitional"
     -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>ABCS - News about HealthNow</title>
+    <title></title>
     <meta name="description" content="All Business Computer Services" />
     <meta name="keywords" content="All Business Computer Services, consultant, healthcare, ICD-10, Obamacare, ACA, PPACA, Facets, HIPAA, CMS, CWS, Web Portal" />
 
@@ -79,7 +79,7 @@
 
                 </li>
 				<li>
-                    <a href="../news/fidelis.html">Fidelis</a>
+                    <a href="../news/fidelis.html" class="active">Fidelis</a>
 
                 </li>
 				<li>
@@ -111,7 +111,7 @@
 
                 </li>
 				<li>
-                    <a href="../news/healthnow-of-new-york.html" class="active">HealthNow of New York</a>
+                    <a href="../news/healthnow-of-new-york.html">HealthNow of New York</a>
 
                 </li>
 				<li>
@@ -192,17 +192,43 @@
     <div class="box-body post-body">
 <div class="post-inner article">
                                 <div class="postcontent">
-<p><span style="color: rgb(194, 186, 163); font-family: 'Palatino Linotype', Georgia, 'Times New Roman', Times, serif; letter-spacing: 2px; font-size: 20px; font-weight: bold; line-height: 20px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">HealthNow of New York Upgrades to Facets 4.71</span></p>
+<p><span style="color: rgb(194, 186, 163); font-family: 'Palatino Linotype', Georgia, 'Times New Roman', Times, serif; letter-spacing: 2px; font-size: 24px; font-weight: bold; line-height: 24px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px;">Fidelis Care</span></p>
 
 <p><br /></p>
 
-<p>The client, Blue Cross Blue Shield of Western New York and Blue Cross Blue Shield of Northeastern New York dba HealthNow of New York wanted to upgrade its TriZetto’s Facets 4.41 application to the 4.71 version and upgrade its ITS Blues Association application to 11.2 on the same weekend. They also wanted to perform this upgrade in a more structured and controlled testing environment that followed a very strict SDLC model and they wanted to do it using many of the newest testing methods and tools. In order to accomplish all this, additional development and test environments needed to be constructed, support systems, development tools, testing tools, and a variety of additional applications needed to be installed to support the initiative. The multiple development environments along with the multiple test environments established for this upgrade allowed the execution of multiple parallel development efforts, as well as QA Testing, User Acceptance Testing, and Performance Testing.<br /></p>
+<p>Fidelis Care was upgrading their Sybase Database Engine Platform in preparation for the upgrade of their Facets Software Application to the current release. In an effort to increase the speed and performance of the new DB engine, new hardware was purchased on which the database was to operate and it was that hardware that would be utilized in the new production environment. </p>
 
 <p><br /></p>
 
-<p><a href="http://www.healthnowny.com/" target="_blank">HealthNow</a></p><br />
+<p>In order to minimize the effort required at Go-Live and in an attempt to make other future upgrades run more smoothly, Fidelis made a decision to update all code that referenced a static IP address to a more dynamic DNS name. </p>
 
-<p></p>
+<p><br /></p>
+
+<p>My role was to help the Fidelis development team identify all of the source code containing IP addresses so that their development teams could remediate the code. I was also asked to analyze stored procedures, modify VB.NET applications, and modify a VB6 application that needed, not only an update of the IP addresses to DNS names, but a number of other business logic and database schema modifications. </p>
+
+<p><br /></p>
+
+<p>My Responsibilities, as Senior Developer, included:</p>
+
+<ul>
+    <li>Analyzing SQL stored procedures and making suggestions for improving speed, performance, logic, error reporting, and logging functionality</li>
+
+    <li>Modifying VB.NET applications to point to a DNS name rather than a hard-coded IP address.</li>
+
+    <li>Modifying a VB6 application, incorporating configuration files that identified the DNS name of the Sybase and MS SQL Server database servers.</li>
+
+    <li>Updating the MS SQL Server database schema, eliminating 7 fields and adding 12 others.</li>
+
+    <li>Helping to develop and modify a PowerShell script that would traverse the entire TFS directory structure and a network drive/directory structure looking for files with IP addresses, and once found, would report the filename, line number, and content that needed to be changed.</li>
+
+    <li>Helping Fidelis Care establish a working VB6 development environment so that any future modifications, that needed to be performed prior to converting the application to a .NET platform, could be performed within that environment.</li>
+</ul>
+
+<p><br /></p>
+
+<p><a href="https://www.fideliscare.org/" target="_blank" title="Fidelis Care">Fidelis Care</a></p>
+
+<p><br /></p>
                 </div>
                 <div class="cleared"></div>
                 </div>

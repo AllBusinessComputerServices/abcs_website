@@ -1,5 +1,5 @@
 /* begin Page */
-/* Created by Artisteer v3.1.0.46558 */
+/* Created by Artisteer v3.1.0.48375 */
 
 #main, table
 {
@@ -196,25 +196,6 @@ html, body
    top: 0;
    cursor:default;
    overflow:hidden;
-}
-
-#page-background-glare-wrapper {
-   position: fixed;
-   width:100%;
-}
-
-#page-background-glare
-{
-   position: relative;
-   top: 0;
-   max-width:740px;
-   min-width: 1000px;
-   height:119px;
-   left: 0;
-   margin-right: auto;
-   background-image: url('images/page_gl.png');
-   background-repeat: no-repeat;
-   background-position: left top;
 }
 
 body
@@ -1157,7 +1138,7 @@ div.block img
 }
 .post-body 
 {
-   padding:15px;
+   padding:10px;
 }
 
 a img
@@ -1169,8 +1150,8 @@ a img
 {
    border-color: #776D50;
    border-style: solid;
-   border-width: 1px;
-   margin: 7px 7px 7px 7px;
+   border-width: 0;
+   margin: 5px 5px 5px 5px;
 }
 
 .metadata-icons img
@@ -1232,10 +1213,20 @@ pre
 }
 /* end Box, Post */
 
+/* begin PostMetadata, PostMetadataHeader */
+.postmetadataheader
+{
+   position:relative;
+   z-index:1;
+   padding: 1px;
+   background-image: url('images/postmetadataheader_bg.png');
+}
+/* end PostMetadata, PostMetadataHeader */
+
 /* begin PostHeaderIcon */
 .postheader
 {
-   color: #B8AE94;
+   color: #BEB59D;
    margin: 12px 0 8px;
    line-height: 1em;
    font-style: normal;
@@ -1260,18 +1251,18 @@ pre
 .postheader a, .postheader a:link
 {
    text-decoration: none;
-   color: #CCAC28;
+   color: #D7B633;
 }
 
 .postheader a:visited, .postheader a.visited
 {
-   color: #F7F1D9;
+   color: #F8F3DD;
 }
 
 .postheader a:hover,  .postheader a.hovered
 {
    text-decoration: underline;
-   color: #D1AF29;
+   color: #D6B42E;
 }
 
 /* end PostHeaderIcon */
@@ -1341,10 +1332,10 @@ span.postdateicon:after
 span.postauthoricon
 {
    background:url('images/postauthoricon.png') no-repeat left 0.5em;
-   padding-top:9px;
-   margin-top:-9px;
-   padding-left:24px;
-   min-height:18px;
+   padding-top:7px;
+   margin-top:-7px;
+   padding-left:18px;
+   min-height:14px;
    display:inline-block;
    line-height: 1em;
 }
@@ -1361,10 +1352,10 @@ span.postauthoricon:after
 span.postediticon
 {
    background:url('images/postediticon.png') no-repeat left 0.5em;
-   padding-top:9px;
-   margin-top:-9px;
-   padding-left:26px;
-   min-height:19px;
+   padding-top:7px;
+   margin-top:-7px;
+   padding-left:21px;
+   min-height:15px;
    display:inline-block;
    line-height: 1em;
 }
@@ -1390,7 +1381,7 @@ span.postediticon:after
    font-size: 12px;
    text-align: left;
    color: #B8AE94;
-   padding: 0 0 0 13px;
+   padding: 0 0 0 17px;
 }
 
 .postcontent li ol, .post li ul
@@ -1412,7 +1403,7 @@ span.postediticon:after
    background-image: url('images/postbullets.png');
    background-repeat: no-repeat;
    background-position: top left;
-   padding-left: 13px;
+   padding-left: 17px;
    /* makes "ul li" not to align behind the image if they are in the same line */
   overflow-x: visible;
    overflow-y: hidden;
@@ -1447,10 +1438,10 @@ blockquote p,
 blockquote
 {
    margin: 10px;
-   padding: 15px;
+   padding: 6px;
    background-color: #46402F;
    margin-left: 50px;
-   padding-left: 48px;
+   padding-left: 34px;
    background-image: url('images/postquote.png');
    background-position: left top;
    background-repeat: no-repeat;
@@ -1460,16 +1451,6 @@ blockquote
 }
 
 /* end PostQuote */
-
-/* begin PostMetadata, PostMetadataFooter */
-.postmetadatafooter
-{
-   position:relative;
-   z-index:1;
-   padding: 1px;
-   background-image: url('images/postmetadatafooter_bg.png');
-}
-/* end PostMetadata, PostMetadataFooter */
 
 /* begin PostIcons, PostFooterIcons */
 .postfootericons,
@@ -1482,7 +1463,7 @@ blockquote
    font-size: 11px;
    text-decoration: none;
    letter-spacing: 1px;
-   color: #E4E1D7;
+   color: #E2DFD4;
 }
 
 .postfootericons
@@ -1494,18 +1475,18 @@ blockquote
 {
    font-style: normal;
    font-weight: bold;
-   color: #C4BCA6;
+   color: #C0B7A0;
 }
 
 .postfootericons a:visited, .postfootericons a.visited
 {
-   color: #C4BCA6;
+   color: #C0B7A0;
 }
 
 .postfootericons a:hover, .postfootericons a.hover
 {
    text-decoration: underline;
-   color: #FAA614;
+   color: #F59D05;
 }
 
 /* end PostIcons, PostFooterIcons */
